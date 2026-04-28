@@ -3,9 +3,9 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # 配置路径
-LABEL_DATA_DIR = '/root/autodl-tmp/.autodl/project/data/daily_label_data'
-FACTOR_DATA_DIR = '/root/autodl-tmp/.autodl/project/data/daily_factor_data'
-OUTPUT_DIR = '/root/autodl-tmp/.autodl/project/data/trade_date_data'
+LABEL_DATA_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_label_data'
+FACTOR_DATA_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_factor_data'
+OUTPUT_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/trade_date_data'
 
 # 滚动训练测试参数
 TRAIN_PERIOD = 240          # 训练周期长度（日）

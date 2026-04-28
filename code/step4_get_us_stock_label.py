@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np
 from collections import defaultdict
 
-DATA_DIR = "/root/autodl-tmp/.autodl/project/data/daily_stock_data"
-OUTPUT_DIR = "/root/autodl-tmp/.autodl/project/data/daily_label_data"
+DATA_DIR = "/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_stock_data"
+OUTPUT_DIR = "/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_label_data"
 
 RETURN_PERIODS = [5, 10, 20, 60, 120, 252]
 VOLATILITY_PERIODS = [5, 10, 20, 60, 120, 252]

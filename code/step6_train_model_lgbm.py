@@ -12,10 +12,10 @@ import joblib
 import concurrent.futures
 
 # 配置路径
-TRADE_DATE_DIR = '/root/autodl-tmp/.autodl/project/data/trade_date_data'
-FACTOR_DATA_DIR = '/root/autodl-tmp/.autodl/project/data/daily_factor_data'
-LABEL_DATA_DIR = '/root/autodl-tmp/.autodl/project/data/daily_label_data'
-MODEL_DIR = '/root/autodl-tmp/.autodl/project/model'
+TRADE_DATE_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/trade_date_data'
+FACTOR_DATA_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_factor_data'
+LABEL_DATA_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_label_data'
+MODEL_DIR = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/model'
 
 # 训练参数
 N_FOLDS = 4  # 4折交叉验证

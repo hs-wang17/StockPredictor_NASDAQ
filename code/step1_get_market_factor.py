@@ -4,7 +4,7 @@ import os
 import time
 
 # 确保数据目录存在
-data_dir = '/root/autodl-tmp/.autodl/project/data'
+data_dir = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data'
 os.makedirs(data_dir, exist_ok=True)
 
 # 函数：获取数据，带重试机制
@@ -63,7 +63,7 @@ daily_factors.rename(columns={
 }, inplace=True)
 
 # 保存到CSV文件
-output_path = '/root/autodl-tmp/.autodl/project/data/daily_market_factor_data/daily_market_factor_data.csv'
+output_path = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_market_factor_data/daily_market_factor_data.csv'
 daily_factors.to_csv(output_path)
 
 print(f"市场因子数据已保存到: {output_path}")

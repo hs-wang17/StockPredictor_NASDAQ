@@ -3,7 +3,7 @@ import os
 import glob
 from tqdm.notebook import tqdm
 
-stocks_dir = '/root/autodl-tmp/.autodl/project/data/stock_market_data/stocks/'
+stocks_dir = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/stock_market_data/stocks/'
 
 csv_files = glob.glob(os.path.join(stocks_dir, '*.csv'))
 print(f"Found {len(csv_files)} stock files")
@@ -23,7 +23,7 @@ print(f"Merged data shape: {merged_df.shape}")
 print(f"Date range: {merged_df.index.min()} to {merged_df.index.max()}")
 merged_df.head()
 
-output_dir = '/root/autodl-tmp/.autodl/project/data/daily_stock_data'
+output_dir = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_stock_data'
 os.makedirs(output_dir, exist_ok=True)
 
 for date in tqdm([date for date in merged_df.index.unique() if date.year >= 2011]):

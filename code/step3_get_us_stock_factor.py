@@ -6,8 +6,8 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import time
 import multiprocessing
 
-data_dir = '/root/autodl-tmp/.autodl/project/data/daily_stock_data'
-output_dir = '/root/autodl-tmp/.autodl/project/data/daily_factor_data'
+data_dir = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_stock_data'
+output_dir = '/root/autodl-tmp/.autodl/StockPredictor_NASDAQ/data/daily_factor_data'
 os.makedirs(output_dir, exist_ok=True)
 
 csv_files = sorted([f for f in os.listdir(data_dir) if f.endswith('.csv')])

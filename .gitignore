@@ -214,3 +214,6 @@ model/
 
 # Logs
 logs/
+
+# Prediction
+outputs/prediction_*/
